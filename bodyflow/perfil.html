@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Perfil | BodyFlow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- PERFIL -->
+
+        <section class="profile-page">
+
+            <div class="profile-top">
+
+                <div class="profile-photo" id="profile-photo">
+
+              <span id="profile-placeholder">
+               👤
+              </span>
+
+               <div class="edit-photo">
+                  📷
+               </div>
+
+               </div>
+
+                  <input
+                        type="file"
+                        id="profile-input"
+                        accept="image/*"
+                        hidden
+                  >
+
+                <div>
+                    <h1>Ane</h1>
+                    <p>Minha jornada BodyFlow 💜</p>
+                </div>
+
+            </div>
+
+
+            <!-- ESTATÍSTICAS -->
+
+            <div class="profile-stats">
+
+                <div>
+                    <strong>28</strong>
+                    <span>dias 🔥</span>
+                </div>
+
+                <div>
+                    <strong>18</strong>
+                    <span>treinos 🏋️</span>
+                </div>
+
+                <div>
+                    <strong>12</strong>
+                    <span>posts 📸</span>
+                </div>
+
+            </div>
+
+
+            <!-- PUBLICAR -->
+
+            <button
+                class="share-progress"
+                id="share-progress">
+
+                + Compartilhar evolução
+
+            </button>
+
+
+            <!-- ÁREA PARA CRIAR POST -->
+
+            <div
+                class="create-post"
+                id="create-post">
+
+                <h2>Nova evolução 💜</h2>
+
+            
+                <textarea
+                    id="progress-message"
+                    placeholder="Conte um pouco sobre sua evolução...">
+                </textarea>
+
+                <button id="publish-button">
+                    Publicar
+                </button>
+
+            </div>
+
+
+            <!-- PUBLICAÇÕES -->
+
+            <h2 class="evolution-title">
+                📸 Minha evolução
+            </h2>
+
+
+            <div id="posts">
+
+                <article class="progress-post">
+
+                    <div class="post-header">
+
+                        <div class="post-avatar">
+                            👤
+                        </div>
+
+                        <div>
+                            <strong>Ane</strong>
+                            <p>Hoje</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="post-image">
+                        📸 Sua foto de evolução
+                    </div>
+
+
+                    <div class="post-content">
+
+                        <strong>
+                            30 dias de consistência 🔥
+                        </strong>
+
+                        <p>
+                            Estou evoluindo um pouco
+                            todos os dias. 💜
+                        </p>
+
+                    </div>
+
+
+                    <div class="post-actions">
+
+                        <button class="like-button">
+                            ♡ <span>24</span>
+                        </button>
+
+                        <button>
+                            💬 8
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MENU -->
+
+        <nav class="navigation">
+
+            <button onclick="window.location.href='index.html'">
+                <span>⌂</span>
+                Início
+            </button>
+
+            <button>
+                <span>⌕</span>
+                Explorar
+            </button>
+
+            <button>
+                <span>👥</span>
+                Comunidade
+            </button>
+
+            <button>
+                <span>◎</span>
+                Progresso
+            </button>
+
+            <button class="active">
+                <span>♙</span>
+                Perfil
+            </button>
+
+        </nav>
+
+    </main>
+
+
+    <script src="perfil.js"></script>
+
+</body>
+
+</html>
