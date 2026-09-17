@@ -1,0 +1,1522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f1eafa,
+            #f8f5fc
+        );
+
+    color: #241b30;
+
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+
+/* APP */
+
+.app {
+    width: 100%;
+    max-width: 430px;
+
+    min-height: 100vh;
+
+    background: #faf8fc;
+
+    padding: 25px 20px 110px;
+
+    position: relative;
+}
+
+
+/* CABEÇALHO */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.logo {
+    color: #7b5cb8;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #746b7c;
+    margin-top: 5px;
+}
+
+.profile {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #e6daf5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+
+/* TÍTULOS */
+
+section {
+    margin-bottom: 32px;
+}
+
+section > h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+
+/* CARD PRINCIPAL */
+
+.main-card {
+    background:
+        linear-gradient(
+            135deg,
+            #4612d6,
+            #7b5cb8
+        );
+
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 24px;
+
+    min-height: 210px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow:
+        0 10px 30px rgba(70, 18, 214, 0.15);
+}
+
+.card-icon {
+    font-size: 38px;
+}
+
+.small {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    opacity: 0.8;
+}
+
+.main-card h3 {
+    font-size: 23px;
+    margin: 5px 0;
+}
+
+.main-card p {
+    opacity: 0.85;
+}
+
+
+/* BOTÃO */
+
+.start-button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: white;
+    color: #5b3f8c;
+
+    font-weight: bold;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+/* CARDS PEQUENOS */
+
+.small-cards {
+    display: flex;
+    gap: 12px;
+
+    margin-top: 12px;
+}
+
+.activity-card {
+    flex: 1;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.activity-card > span {
+    font-size: 25px;
+}
+
+.activity-card h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.activity-card p {
+    font-size: 13px;
+    color: #777;
+
+    margin: 4px 0 12px;
+}
+
+.check-button {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    border: 2px solid #b49ad6;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.check-button.completed {
+    background: #7b5cb8;
+    color: white;
+}
+
+
+/* JORNADA */
+
+.journey-card {
+    background:
+        linear-gradient(
+            135deg,
+            #5b3f8c,
+            #7b5cb8
+        );
+
+    color: white;
+
+    border-radius: 24px;
+
+    padding: 22px;
+}
+
+
+.streak {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#days {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.streak strong {
+    font-size: 20px;
+}
+
+.streak p {
+    color: #e1d5ef;
+}
+
+
+/* BARRA DE PROGRESSO */
+
+.progress-background {
+    width: 100%;
+    height: 9px;
+
+    background: #493568;
+
+    border-radius: 20px;
+
+    margin: 20px 0 10px;
+
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+
+    background: #c3a6e8;
+
+    border-radius: 20px;
+
+    transition: 0.4s;
+}
+
+#progress-text {
+    font-size: 13px;
+
+    color: #e1d5ef;
+}
+
+
+/* CATEGORIAS */
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.category {
+    background: white;
+
+    border: none;
+    border-radius: 18px;
+
+    padding: 20px 10px;
+
+    box-shadow:
+        0 5px 18px rgba(91, 63, 140, 0.08);
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.category span {
+    font-size: 27px;
+}
+
+
+/* MODO MÍNIMO */
+
+.minimum-card {
+    background: #eee5f8;
+
+    border-radius: 22px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.minimum-card h2 {
+    margin: 5px 0;
+
+    color: #3d295c;
+}
+
+.minimum-card p {
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #665775;
+}
+
+#minimum-button {
+    border: none;
+
+    background: #5b3f8c;
+    color: white;
+
+    padding: 12px 16px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+}
+
+
+/* MENU INFERIOR */
+
+.navigation {
+    position: fixed;
+
+    bottom: 0;
+
+    width: 100%;
+    max-width: 430px;
+
+    background: white;
+
+    padding: 12px 10px 18px;
+
+    display: flex;
+    justify-content: space-around;
+
+    box-shadow:
+        0 -5px 20px rgba(91, 63, 140, 0.08);
+}
+
+.navigation button {
+    border: none;
+    background: transparent;
+
+    color: #93889d;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4px;
+
+    cursor: pointer;
+}
+
+.navigation button span {
+    font-size: 22px;
+}
+
+.navigation .active {
+    color: #5b3f8c;
+
+    font-weight: bold;
+}
+/* ========================================
+   PÁGINA DE PERFIL
+======================================== */
+
+.profile-page {
+    width: 100%;
+}
+
+
+/* TOPO DO PERFIL */
+
+.profile-top {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.profile-photo {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #4612d6,
+        #7b5cb8
+    );
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+
+.profile-top h1 {
+    font-size: 26px;
+}
+
+
+.profile-top p {
+    color: #746b7c;
+
+    margin-top: 4px;
+}
+
+
+/* ESTATÍSTICAS */
+
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 5px 20px rgba(91, 63, 140, 0.08);
+}
+
+
+.profile-stats div {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+.profile-stats strong {
+    font-size: 22px;
+
+    color: #5b3f8c;
+}
+
+
+.profile-stats span {
+    font-size: 12px;
+
+    color: #746b7c;
+}
+
+
+/* BOTÃO COMPARTILHAR */
+
+.share-progress {
+    width: 100%;
+
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 16px;
+
+    background: linear-gradient(
+        135deg,
+        #4612d6,
+        #7b5cb8
+    );
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+
+
+/* CRIAR PUBLICAÇÃO */
+
+.create-post {
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 5px 20px rgba(91, 63, 140, 0.08);
+}
+
+
+.create-post h2 {
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+
+.create-post input {
+    width: 100%;
+
+    margin-bottom: 12px;
+}
+
+
+.create-post textarea {
+    width: 100%;
+    min-height: 90px;
+
+    resize: none;
+
+    padding: 12px;
+
+    border: 1px solid #ded3ec;
+
+    border-radius: 14px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    outline: none;
+}
+
+
+.create-post textarea:focus {
+    border-color: #7b5cb8;
+}
+
+
+#publish-button {
+    width: 100%;
+
+    border: none;
+
+    background: #5b3f8c;
+
+    color: white;
+
+    padding: 12px;
+
+    border-radius: 14px;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* TÍTULO MINHA EVOLUÇÃO */
+
+.evolution-title {
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+/* PUBLICAÇÃO */
+
+.progress-post {
+    background: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 6px 22px rgba(91, 63, 140, 0.10);
+}
+
+
+/* CABEÇALHO DA PUBLICAÇÃO */
+
+.post-header {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px;
+}
+
+
+.post-avatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #eee5f8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.post-header p {
+    font-size: 12px;
+
+    color: #93889d;
+
+    margin-top: 2px;
+}
+
+
+/* FOTO DA EVOLUÇÃO */
+
+.post-image {
+    width: 100%;
+    height: 270px;
+
+    background: linear-gradient(
+        135deg,
+        #eee5f8,
+        #d8c6ee
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #5b3f8c;
+
+    font-weight: bold;
+}
+
+
+/* TEXTO DA PUBLICAÇÃO */
+
+.post-content {
+    padding: 15px;
+}
+
+
+.post-content p {
+    margin-top: 7px;
+
+    color: #665775;
+
+    line-height: 1.4;
+}
+
+
+/* CURTIDAS E COMENTÁRIOS */
+
+.post-actions {
+    display: flex;
+
+    gap: 20px;
+
+    padding:
+        0
+        15px
+        17px;
+}
+
+
+.post-actions button {
+    border: none;
+
+    background: transparent;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    color: #5b3f8c;
+}
+
+
+.like-button {
+    font-weight: bold;
+}
+/* FOTO PUBLICADA */
+
+.published-image {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* PUBLICAÇÃO CURTIDA */
+
+.like-button.liked {
+    color: #7b5cb8;
+}
+/* CORREÇÃO FOTO DE PERFIL */
+
+.profile-photo {
+    width: 70px;
+    height: 70px;
+
+    min-width: 70px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    background: linear-gradient(
+        135deg,
+        #4612d6,
+        #7b5cb8
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    cursor: pointer;
+    
+    
+}
+
+
+#profile-image {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: none;
+}
+
+
+#profile-placeholder {
+    display: block;
+
+    font-size: 30px;
+
+    line-height: 1;
+}
+
+
+.edit-photo {
+    position: absolute;
+
+    right: 2px;
+    bottom: 2px;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+
+    background: #5b3f8c;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+
+    z-index: 10;
+}
+/* ========================================
+   KIKO - MASCOTE BODYFLOW
+======================================== */
+
+.kiko-card {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #eee5f8,
+        #f7f2fc
+    );
+
+    padding: 15px;
+
+    border-radius: 22px;
+
+    margin-bottom: 28px;
+
+    box-shadow:
+        0 6px 20px rgba(91, 63, 140, 0.08);
+}
+
+
+/* FOTO DO KIKO */
+
+.kiko-image {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+}
+
+
+/* TEXTO */
+
+.kiko-message {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.kiko-name {
+    color: #7b5cb8;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.kiko-message strong {
+    color: #3d295c;
+
+    font-size: 16px;
+}
+
+
+.kiko-message p {
+    color: #746b7c;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+   /* ==================================================
+   BODYFLOW - AJUSTE VISUAL
+   COLE NO FINAL DO STYLE.CSS
+================================================== */
+
+
+/* FUNDO EXTERNO DA PÁGINA */
+
+body {
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            #eee4fa 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            #e7dcf7 0%,
+            transparent 35%
+        ),
+        #f6f1fb;
+}
+
+
+/* FUNDO DO APLICATIVO */
+
+.app {
+    background:
+        linear-gradient(
+            180deg,
+            #fdfbff 0%,
+            #faf7fd 100%
+        );
+}
+
+
+/* ==================================================
+   CARD DO KIKO
+================================================== */
+
+.kiko-card {
+    position: relative;
+
+    min-height: 150px;
+
+    padding: 18px 20px;
+
+    gap: 20px;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f2e8ff 0%,
+            #eee1fb 50%,
+            #e9d8fa 100%
+        );
+
+    box-shadow:
+        0 8px 25px
+        rgba(91, 63, 140, 0.08);
+}
+
+
+/* MANCHA DECORATIVA DO CARD */
+
+.kiko-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: -70px;
+    top: -90px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.28);
+
+    pointer-events: none;
+}
+
+
+/* SEGUNDA MANCHA */
+
+.kiko-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 80px;
+
+    right: -40px;
+    bottom: -50px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(123, 92, 184, 0.08);
+
+    transform: rotate(-15deg);
+
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   KIKO
+================================================== */
+
+.kiko-image {
+    width: 115px;
+    height: 115px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* ==================================================
+   TEXTO DO KIKO
+================================================== */
+
+.kiko-message {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.kiko-name {
+    color: #7446c8;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.kiko-message strong {
+    color: #24133f;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.25;
+}
+
+
+.kiko-message p {
+    color: #766985;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* ==================================================
+   CARD PRINCIPAL DE MUSCULAÇÃO
+================================================== */
+
+.main-card {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #5114df 0%,
+            #6d35ce 55%,
+            #8254bd 100%
+        );
+
+    box-shadow:
+        0 12px 30px
+        rgba(91, 38, 180, 0.18);
+}
+
+
+/* EFEITO DECORATIVO NO CARD */
+
+.main-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 150px;
+
+    right: -80px;
+    top: -70px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.06);
+
+    transform: rotate(-20deg);
+
+    pointer-events: none;
+}
+
+
+/* GARANTE QUE O CONTEÚDO FIQUE NA FRENTE */
+
+.main-card > * {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* ==================================================
+   BOTÃO COMEÇAR
+================================================== */
+
+.start-button {
+    background:
+        rgba(255, 255, 255, 0.96);
+
+    color: #6336a4;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.start-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 18px
+        rgba(0, 0, 0, 0.10);
+}
+
+
+/* ==================================================
+   MENU INFERIOR
+================================================== */
+
+.navigation {
+    background:
+        rgba(255, 255, 255, 0.96);
+
+    border-radius:
+        22px 22px 0 0;
+
+    box-shadow:
+        0 -6px 25px
+        rgba(77, 48, 110, 0.07);
+}
+
+
+.navigation button {
+    color: #94879f;
+}
+
+
+.navigation .active {
+    color: #6434bd;
+
+    font-weight: 700;
+}
+ /* =========================================
+   CORREÇÃO FINAL - CARD DO KIKO
+   SOMENTE O KIKO
+========================================= */
+
+.kiko-card {
+    min-height: 130px;
+
+    padding: 15px 18px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    border-radius: 22px;
+
+    background: linear-gradient(
+        135deg,
+        #eee5f8,
+        #f7f2fc
+    );
+
+    overflow: hidden;
+}
+
+
+/* FOTO DO KIKO */
+
+.kiko-image {
+    width: 145px;
+    height: 125px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+
+    transform: scale(1.35);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* TEXTO */
+
+.kiko-message {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.kiko-name {
+    font-size: 14px;
+
+    color: #7b5cb8;
+
+    font-weight: bold;
+}
+
+
+.kiko-message strong {
+    font-size: 17px;
+
+    color: #31204d;
+
+    line-height: 1.2;
+}
+
+
+.kiko-message p {
+    font-size: 13px;
+
+    color: #746b7c;
+
+    line-height: 1.4;
+}
+
+
+/* TIRAR AS BOLAS QUE COLOCAMOS ANTES */
+
+.kiko-card::before,
+.kiko-card::after {
+    display: none;
+}
+/* =========================================
+   DECORAÇÃO DO CARD DO KIKO
+========================================= */
+
+.kiko-card {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #f3e8ff,
+        #ead7fa
+    );
+}
+
+
+/* CÍRCULO ATRÁS DO KIKO */
+
+.kiko-card::before {
+    content: "";
+
+    display: block;
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    left: -35px;
+    bottom: -55px;
+
+    border-radius: 50%;
+
+    background: rgba(123, 92, 184, 0.15);
+
+    z-index: 0;
+}
+
+
+/* CÍRCULO ATRÁS DO TEXTO */
+
+.kiko-card::after {
+    content: "";
+
+    display: block;
+
+    position: absolute;
+
+    width: 190px;
+    height: 190px;
+
+    right: -65px;
+    top: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(123, 92, 184, 0.13);
+
+    z-index: 0;
+}
+
+
+/* KIKO FICA NA FRENTE DOS CÍRCULOS */
+
+.kiko-image {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* TEXTO FICA NA FRENTE DOS CÍRCULOS */
+
+.kiko-message {
+    position: relative;
+    z-index: 2;
+}
+/* =========================================
+   SOMENTE O FUNDO DO BODYFLOW
+========================================= */
+
+body {
+    background: linear-gradient(
+        180deg,
+        #8d73e6 0%,
+        #6b4bd1 45%,
+        #39248f 100%
+    );
+
+    min-height: 100vh;
+}
+
+
+/* FUNDO DA ÁREA DO APP */
+
+.app {
+    background: linear-gradient(
+        180deg,
+        #8d73e6 0%,
+        #6b4bd1 45%,
+        #39248f 100%
+    );
+}
+.app {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* CÍRCULO SUPERIOR */
+
+.app::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    top: -120px;
+    right: -130px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    pointer-events: none;
+}
+
+
+/* CÍRCULO INFERIOR */
+
+.app::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    bottom: -180px;
+    left: -180px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    pointer-events: none;
+}
+.app > * {
+    position: relative;
+    z-index: 1;
+}
+/* DEIXAR OS TEXTOS CINZA MAIS ESCUROS */
+
+.subtitle {
+    color: #4f4658;
+}
+
+.activity-card p {
+    color: #514858;
+}
+
+.kiko-message p {
+    color: #55485f;
+}
+
+#progress-text {
+    color: #514858;
+}
+
+.minimum-card p {
+    color: #514858;
+}
+
+.navigation button {
+    color: #514858;
+}
+/* DEIXAR OS TEXTOS CINZA MAIS ESCUROS */
+
+.subtitle {
+    color: #4f4658;
+}
+
+.activity-card p {
+    color: #514858;
+}
+
+.kiko-message p {
+    color: #55485f;
+}
+
+#progress-text {
+    color: #24133f;
+}
+
+.minimum-card p {
+    color: #514858;
+}
+
+.navigation button {
+    color:#24133f ;
+}
+/* CORREÇÃO DOS TEXTOS DO CABEÇALHO */
+
+.logo {
+    color: #5b21b6 !important;
+}
+
+.header h1 {
+    color: #17111d !important;
+}
+
+.subtitle {
+    color:#5b21b6 !important;
+}
