@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BodyFlow</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="header">
+            <div>
+                <p class="logo">BodyFlow</p>
+                <h1>Olá 👋</h1>
+                <p class="subtitle">Seu corpo muda com consistência.</p>
+            </div>
+
+            <div class="profile">A</div>
+        </header>
+
+        <div class="kiko-card">
+
+       <img
+       src="kiko.png"
+       alt="Kiko, mascote do BodyFlow"
+       class="kiko-image"
+       >
+
+    <div class="kiko-message">
+        <span class="kiko-name">Kiko 💜</span>
+
+        <strong>Vamos cuidar de você hoje?</strong>
+
+        <p>
+            Um pouco todos os dias já conta.
+        </p>
+        </div>
+
+        </div>
+
+
+        <section>
+            <h2>Seu plano de hoje</h2>
+
+            <div class="main-card">
+
+                <div class="card-icon">🏋️</div>
+
+                <div>
+                    <p class="small">TREINO DO DIA</p>
+                    <h3>Musculação iniciante</h3>
+                    <p>25 minutos • Corpo completo</p>
+                </div>
+
+                <button class="start-button">
+                    Começar
+                </button>
+
+            </div>
+
+
+            <div class="small-cards">
+
+                <div class="activity-card">
+                    <span>🚶</span>
+
+                    <div>
+                        <h3>Cardio</h3>
+                        <p>30 minutos</p>
+                    </div>
+
+                    <button class="check-button" data-task="cardio">
+                        ✓
+                    </button>
+                </div>
+
+
+                <div class="activity-card">
+                    <span>🥗</span>
+
+                    <div>
+                        <h3>Alimentação</h3>
+                        <p>Meta do dia</p>
+                    </div>
+
+                    <button class="check-button" data-task="alimentacao">
+                        ✓
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="journey">
+
+            <h2>Sua jornada</h2>
+
+            <div class="journey-card">
+
+                <div class="streak">
+                    <span id="days">0</span>
+
+                    <div>
+                        <strong>dias</strong>
+                        <p>de consistência 🔥</p>
+                    </div>
+                </div>
+
+                <div class="progress-background">
+                    <div
+                        class="progress"
+                        id="progress">
+                    </div>
+                </div>
+
+                <p id="progress-text">
+                    0 de 3 atividades concluídas
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Explorar</h2>
+
+            <div class="categories">
+
+                <button class="category">
+                    <span>🏋️</span>
+                    Musculação
+                </button>
+
+                <button class="category">
+                    <span>🏃</span>
+                    Cardio
+                </button>
+
+                <button class="category">
+                    <span>🥑</span>
+                    Alimentação
+                </button>
+
+                <button class="category">
+                    <span>⏱️</span>
+                    Jejum
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="minimum-card">
+
+            <div>
+                <p class="small">SEM ENERGIA HOJE?</p>
+
+                <h2>Modo mínimo</h2>
+
+                <p>
+                    Faça apenas o necessário para manter
+                    sua consistência.
+                </p>
+            </div>
+
+            <button id="minimum-button">
+                Ativar
+            </button>
+
+        </section>
+
+
+        <nav class="navigation">
+
+            <button class="active">
+                <span>⌂</span>
+                Início
+            </button>
+
+            <button>
+                <span>⌕</span>
+                Explorar
+            </button>
+
+            <button>
+                <span>◎</span>
+                Progresso
+            </button>
+
+            <button onclick="window.location.href='perfil.html'">
+                <span>♙</span>
+                Perfil
+            </button>
+
+        </nav>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
